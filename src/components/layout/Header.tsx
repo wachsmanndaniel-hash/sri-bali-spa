@@ -14,48 +14,65 @@ export default function Header() {
     }`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="text-xl font-semibold tracking-wide text-white md:text-2xl"
-        >
-          Sri Bali Spa Halle
-        </Link>
+    <header className="fixed top-4 left-1/2 z-50 w-[98%] max-w-7xl -translate-x-1/2 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-xl shadow-[0_0_15px_rgba(201,165,106,0.35),0_0_30px_rgba(201,165,106,0.25),0_0_60px_rgba(201,165,106,0.15),0_15px_40px_rgba(0,0,0,0.65)]">
+      <div className="h-20">
+        {/* WICHTIG: Kein justify-between mehr */}
+        <div className="flex h-full items-center px-10 w-full">
+          
+          {/* Titel mit Abstand */}
+          <div className="pl-8">
+            <Link
+              href="/"
+              className="text-xl font-semibold tracking-wide text-white md:text-2xl"
+            >
+              Sri Bali Spa Halle
+            </Link>
+          </div>
 
-        <nav className="hidden items-center gap-10 md:flex">
-          <Link href="/" className={linkClass("/")}>
-            Home
-          </Link>
+          {/* Spacer schiebt Navigation nach rechts */}
+          <div className="flex-1" />
 
-          <Link href="/behandlungen" className={linkClass("/behandlungen")}>
-            Behandlungen
-          </Link>
+          {/* Navigation */}
+          <nav className="hidden items-center gap-10 md:flex">
+            <Link href="/" className={linkClass("/")}>
+              Home
+            </Link>
 
-          <Link href="/anfahrt" className={linkClass("/anfahrt")}>
-            Anfahrt
-          </Link>
-        </nav>
+            <Link href="/behandlungen" className={linkClass("/behandlungen")}>
+              Behandlungen
+            </Link>
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="text-3xl text-white md:hidden"
-          aria-label="Menü öffnen"
-        >
-          ☰
-        </button>
+            <Link href="/anfahrt" className={linkClass("/anfahrt")}>
+              Anfahrt
+            </Link>
+          </nav>
+
+          {/* Mobile Button */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-3xl text-white md:hidden"
+            aria-label="Menü öffnen"
+          >
+            {open ? "✕" : "☰"}
+          </button>
+        </div>
       </div>
 
+      {/* Mobile Menü */}
       {open && (
-        <div className="border-t border-white/10 bg-black/90 backdrop-blur-xl md:hidden">
-          <nav className="flex flex-col px-6 py-4 text-white">
-            <Link href="/" className="py-3" onClick={() => setOpen(false)}>
+        <div className="absolute right-6 top-20 md:hidden">
+          <nav className="min-w-[220px] rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl shadow-2xl">
+            <Link
+              href="/"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
+              onClick={() => setOpen(false)}
+            >
               Home
             </Link>
 
             <Link
               href="/behandlungen"
-              className="py-3"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
               onClick={() => setOpen(false)}
             >
               Behandlungen
@@ -63,7 +80,7 @@ export default function Header() {
 
             <Link
               href="/anfahrt"
-              className="py-3"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
               onClick={() => setOpen(false)}
             >
               Anfahrt

@@ -66,7 +66,7 @@ export default function MassageCard({
         >
           {/* Vorderseite */}
 
-          <div className="absolute inset-0 overflow-hidden rounded-[32px] bg-[#2b241d] shadow-2xl [backface-visibility:hidden]">
+          <div className="absolute inset-0 overflow-hidden rounded-[32px] bg-[#2b241d] shadow-[0_0_20px_rgba(201,165,106,0.35),0_0_50px_rgba(201,165,106,0.18),0_20px_50px_rgba(0,0,0,0.55)] [backface-visibility:hidden]">
             <Image
               src={image}
               alt={title}
@@ -91,7 +91,7 @@ export default function MassageCard({
 
           {/* Rückseite */}
 
-          <div className="absolute inset-0 rounded-[32px] border border-[#C9A56A]/30 bg-[#241d18]/95 p-12 text-white shadow-2xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <div className="absolute inset-0 rounded-[32px] border border-[#C9A56A]/40 bg-black/40 p-12 text-white backdrop-blur-xl shadow-[0_0_25px_rgba(201,165,106,0.4),0_0_60px_rgba(201,165,106,0.2),0_20px_60px_rgba(0,0,0,0.7)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -149,7 +149,7 @@ export default function MassageCard({
                 <a
                   href="https://wa.me/4915735800891"
                   onClick={(e) => e.stopPropagation()}
-                  className="flex h-14 items-center justify-center rounded-full bg-[#C9A56A] px-8 text-lg font-medium transition hover:bg-[#B89357]"
+                  className="flex h-14 items-center justify-center rounded-full border border-[#C9A56A]/50 bg-black/30 px-8 text-lg font-medium text-white backdrop-blur-md transition-all duration-300 shadow-[0_0_20px_rgba(201,165,106,0.7),0_0_40px_rgba(201,165,106,0.4),0_0_80px_rgba(201,165,106,0.2)] hover:scale-105 hover:shadow-[0_0_30px_rgba(201,165,106,1),0_0_60px_rgba(201,165,106,0.6),0_0_120px_rgba(201,165,106,0.3)]"
                 >
                   WhatsApp schreiben
                 </a>
@@ -157,7 +157,7 @@ export default function MassageCard({
                 <a
                   href="tel:+4915735800891"
                   onClick={(e) => e.stopPropagation()}
-                  className="flex h-14 items-center justify-center rounded-full border border-[#C9A56A] px-8 text-lg transition hover:bg-[#C9A56A] hover:text-black"
+                  className="flex h-14 items-center justify-center rounded-full border border-[#C9A56A]/40 bg-black/20 px-8 text-lg text-white backdrop-blur-md transition-all duration-300 shadow-[0_0_12px_rgba(201,165,106,0.25),0_0_30px_rgba(201,165,106,0.1)] hover:scale-105 hover:shadow-[0_0_20px_rgba(201,165,106,0.5),0_0_45px_rgba(201,165,106,0.25)]"
                 >
                   Jetzt anrufen
                 </a>

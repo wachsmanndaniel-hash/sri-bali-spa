@@ -14,12 +14,13 @@ export default function Button({
   variant = "primary",
   className = "",
 }: ButtonProps) {
-  const variants = {
-    primary:
-      "bg-[#C9A56A] text-white hover:bg-[#B89357] shadow-lg hover:shadow-xl",
-    outline:
-      "border border-white bg-transparent text-white hover:bg-white hover:text-[#2B2B2B]",
-  };
+const variants = {
+  primary:
+    "border border-[#C9A56A]/40 bg-black/20 text-white backdrop-blur-md shadow-[0_0_10px_rgba(201,165,106,0.5),0_0_25px_rgba(201,165,106,0.25)] hover:border-[#C9A56A]/70 hover:shadow-[0_0_20px_rgba(201,165,106,0.8),0_0_50px_rgba(201,165,106,0.4)]",
+
+  outline:
+    "border border-white/20 bg-black/20 text-white backdrop-blur-md shadow-[0_0_8px_rgba(201,165,106,0.15)] hover:border-[#C9A56A]/50 hover:shadow-[0_0_15px_rgba(201,165,106,0.35),0_0_35px_rgba(201,165,106,0.15)]",
+};
 
   return (
     <Link

@@ -28,7 +28,7 @@ export default function AnfahrtPage() {
                 Sri Bali Spa Halle
               </p>
 
-              <h1 className="mt-5 text-5xl font-light text-white md:text-7xl">
+              <h1 className="mt-5 text-5xl font-light text-white drop-shadow-[0_0_20px_rgba(201,165,106,0.4)] md:text-7xl">
                 Anfahrt
               </h1>
 
@@ -41,7 +41,7 @@ export default function AnfahrtPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-md">
+            <div className="overflow-hidden rounded-[32px] border border-[#C9A56A]/30 bg-black/30 backdrop-blur-xl shadow-[0_0_20px_rgba(201,165,106,0.35),0_0_50px_rgba(201,165,106,0.15),0_20px_50px_rgba(0,0,0,0.55)]">
               <iframe
                 src="https://www.google.com/maps?q=Merseburger+Straße+106,+06110+Halle+(Saale)&output=embed"
                 className="h-[500px] w-full"
@@ -49,7 +49,7 @@ export default function AnfahrtPage() {
               />
             </div>
 
-            <div className="mt-10 rounded-[32px] border border-white/10 bg-white/5 p-10 text-center text-white backdrop-blur-md">
+            <div className="mt-10 rounded-[32px] border border-[#C9A56A]/30 bg-black/30 p-10 text-center text-white backdrop-blur-xl shadow-[0_0_25px_rgba(201,165,106,0.4),0_0_60px_rgba(201,165,106,0.2),0_20px_60px_rgba(0,0,0,0.7)]">
               <h2 className="text-3xl font-light">
                 Sri Bali Spa Halle
               </h2>
@@ -64,7 +64,7 @@ export default function AnfahrtPage() {
                 href="https://maps.google.com/?q=Merseburger+Straße+106+06110+Halle"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-[#C9A56A] px-8 py-4 font-medium text-white transition hover:bg-[#B89357]"
+                className="mt-8 inline-flex items-center justify-center rounded-full border border-[#C9A56A]/50 bg-black/30 px-8 py-4 font-medium text-white backdrop-blur-md transition-all duration-300 shadow-[0_0_20px_rgba(201,165,106,0.7),0_0_40px_rgba(201,165,106,0.4),0_0_80px_rgba(201,165,106,0.2)] hover:scale-105 hover:shadow-[0_0_30px_rgba(201,165,106,1),0_0_60px_rgba(201,165,106,0.6),0_0_120px_rgba(201,165,106,0.3)]"
               >
                 Route starten
               </a>
