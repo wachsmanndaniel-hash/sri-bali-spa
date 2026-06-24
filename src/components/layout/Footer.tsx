@@ -12,17 +12,12 @@ export default function Footer() {
         </p>
 
         <nav className="flex w-full items-center justify-center gap-6 text-sm text-gray-300 md:w-auto md:justify-end">
-          <Link
-            href="/impressum"
-            className="transition hover:text-[#C9A56A]"
-          >
+          <Link href="/ueber-uns">Über Uns</Link>
+          <Link href="/impressum" className="transition hover:text-[#C9A56A]">
             Impressum
           </Link>
 
-          <Link
-            href="/datenschutz"
-            className="transition hover:text-[#C9A56A]"
-          >
+          <Link href="/datenschutz" className="transition hover:text-[#C9A56A]">
             Datenschutz
           </Link>
 

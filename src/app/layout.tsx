@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import MusicPlayer from "@/components/ui/MusicPlayer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
         </div>
 
         {children}
+        <MusicPlayer />
       </body>
     </html>
   );
