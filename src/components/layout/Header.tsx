@@ -61,10 +61,10 @@ export default function Header() {
       {/* Mobile Menü */}
       {open && (
         <div className="absolute right-6 top-20 md:hidden">
-          <nav className="min-w-[220px] rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-xl shadow-2xl">
+          <nav className="min-w-[240px] rounded-[28px] border border-[#C9A56A]/30 bg-black/30 p-4 backdrop-blur-xl shadow-[0_0_25px_rgba(201,165,106,0.4),0_0_60px_rgba(201,165,106,0.2),0_20px_60px_rgba(0,0,0,0.7)]">
             <Link
               href="/"
-              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-[#C9A56A]/10"
               onClick={() => setOpen(false)}
             >
               Home
@@ -72,7 +72,7 @@ export default function Header() {
 
             <Link
               href="/behandlungen"
-              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-[#C9A56A]/10"
               onClick={() => setOpen(false)}
             >
               Behandlungen
@@ -80,7 +80,7 @@ export default function Header() {
 
             <Link
               href="/anfahrt"
-              className="block rounded-lg px-4 py-3 text-white transition hover:bg-white/10"
+              className="block rounded-lg px-4 py-3 text-white transition hover:bg-[#C9A56A]/10"
               onClick={() => setOpen(false)}
             >
               Anfahrt
